@@ -245,7 +245,7 @@
         <p>Tracked (o git conhece) e untracked (o git não conhece). Para isso: <br> ao dar git init todos arquivos estão no untracked; pelo git add se coloca no staged; para tanto o git primeiro leva para o modified (modificado); em seguida, é levado para o staged em que o arquivo está se preparando para o commit.</p>
 
         <div class="titulo-tela2">
-            <h1> Módulo 4 - Projeto prático do repositório do GitHub. </h1>
+            <h1> Módulo 4 - Projeto prático do repositório do GitHub. [PRÁTICO] </h1>
         </div>
 
         <cite> "Alguém está sentado na sombra hoje por que outra pessoa plantou uma árvore há pouco tempo." Warren Buffet. </cite>
@@ -276,7 +276,7 @@
 
         <p>A criação do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolução da web, isso ainda representa uma boa parte do conteúdo da web. <br> Já falamos anteriormente sobre os elementos h1-h6 e, eles são essenciais para nos indicar visualmente a importância e localização de seções de texto na página, mas para textos maiores e mais densos usamos o elemento p. <br> O &lt; p &gt; representa um parágrafo, mas ele não suporta apenas texto, podemos adicionar imagens, código, vídeos e vários outros tipos de conteúdo dentro dele. <br> Um outro elemento interessante e extremamente necessário na web é o &lt; a &gt; - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web. O elemento a tem vários atributos, mas vamos focar em dois, o href e o target. <br> O href representa o hyperlink para onde sua âncora aponta, pode ser uma página do seu ou de outro site, um e-mail e até mesmo um telefone, os dois últimos precisam dos prefixos mailto: e tel:, respectivamente. <br> O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.</p>
 
-        <p><strong> Prática: Vamos adicionar um texto fictício a nossa postagem: logo após o fechamento do </header> vamos adicionar um elemento p e inserir um texto que vamos retirar do site lipsum.com E em alguma parte deste texto vamos adicionar um hiperlink para outra página e um para nosso e-mail. Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: a href="mailto:lucas@vilaboim.com" target="_blank" lucas@vilaboim.com /a </strong> <a href="#footer"> (esse site é minha resposta)</a></p>
+        <p><strong> Prática: Vamos adicionar um texto fictício a nossa postagem: logo após o fechamento do </header> vamos adicionar um elemento p e inserir um texto que vamos retirar do site lipsum.com E em alguma parte deste texto vamos adicionar um hiperlink para outra página e um para nosso e-mail. Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: a href="mailto:luizesquivel@gmail.com" target="_blank" lucas@vilaboim.com /a </strong> <a href="#footer"> (esse site é minha resposta)</a></p>
 
         <h4>Imagens:</h4>
 
@@ -285,6 +285,75 @@
         <h4>Listas:</h4>
 
         <p>Os últimos elementos que veremos neste módulo são os relacionados a listas: ul, ol e li. Listas servem para agrupar uma coleçãode itens, como uma lista de ingredientes ou, como será no nosso caso, uma lista com contatos. <br> O elemento ul cria uma lista não ordenada, onde a ordem dos elementos não é importante, e é representada com pontos, círculos ou quadrados. <br> O ol serve para criar lista ordenadas, nessas a ordem importa, portanto elas são representadas com números, algarismos romanos ou letras. <br> E o elemento li é um item dentro de uma dessas listas. Um li pode conter vários tipos de conteúdos, como parágrafos, imagens e até outras listas.</p>
+
+        <h2>Introdução ao CSS3.</h2>
+
+        <h4>Definição e seletores:</h4>
+
+        <p>Após a criação do HTML a necessidade de formatar as páginas ficou evidente, assim, em 1996, foi criada a linguagem de estilo que conhecemos por CSS. A sintaxe é bem simples e pode ser explicada com a frase "você cria regras de estilo para elementos ou grupos de elementos". Vamos usar um elemento HTML que vimos anteriormente, a âncora a , para exemplificar. Uma regra CSS é representada por um seletor ou um grupo de seletores, no nosso caso é o a, então dentro de um par de chaves adicionamos as declarações, no exemplo acima estamos alterando cor e tamanho da fonte dessa âncora, as declarações são formadas por uma propriedade e um valor. Percebam que podemos colocar vários seletores em uma regra separando-os por vírgula. E há um último detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem alterações causadas pela interação do usuário, como mover o mouse por cima ou clicar nesse elemento. O a:hover do exemplo significa que a âncora também terá essa aparência quando o usuário passar o mouse por cima de um hyperlink.</p>
+
+        <h4>ID x Classe</h4>
+
+        <p>No exemplo anterior criamos uma regra que altera um elemento HTML diretamente, mas isso significa que todos os elementos a ficarão com aquela aparência, e normalmente temos sites mais complexos que precisam de várias regras diferentes para elementos iguais. Para ficar mais tangível vamos relembrar um pouco o site que começamos a fazer no módulo passado, ele tinha vários elementos header, mas não vamos querer que o header principal tenha a mesma formatação que o header de uma postagem, é aí que entram os IDs e Classes. <br> O seletor que vimos no primeiro exemplo é um seletor de tipo, pois ele representa um elemento HTML, e com IDs e Classes podemos representar qualquer tipo de elemento mas há algumas diferenças entre eles: <br> ID: é representado pelo símbolo # (hash) seguido de um nome para esse ID. <br> Classe: a classe é representada de forma parecida do ID, mas é precedida por um ponto em vez do hash. <br> E a diferença mais importante entre eles é a forma como devem ser usados: o ID só pode ser usado uma vez em uma página HTML enquanto a classe não tem restrições.</p>
+
+        <h4>Box-model</h4>
+
+        <p>Quando estamos criando o layout de um site o navegador representa cada elemento HTML  como uma caixa retangular, isso é o box-model. E com CSS nós alteramos a aparência dessa caixa (largura, altura, cor de fundo, etc.). Essa caixa é composta por 4 áreas: o conteúdo, o padding, a borda e a margem. <ul> <li> As margens (margin) são espaçamentos entre elementos; </li> <li> As bordas (border); </li> <li> O padding é um espaçamento entre as bordas e o conteúdo, a diferença para as margens é que declarações de imagem de fundo funcionam nele; </li> <li> O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, um vídeo. </li> </ul></p>
+
+        <h4>Estilizando elementos:</h4>
+
+        <h6>Padding e Margin</h6>
+
+        <p>Anteriormente usamos o padding e o margin da forma mais básica, com apenas um valor, mas eles são mais poderosos que isso. Se quisermos atribuir tamanhos diferentes para cada lado do box nós podemos, e vamos ver três formas de fazer isso. A primeira é colocando um valor para as partes superior e inferior e depois para os lados esquerdo e direito. O valor de 10 pixels se refere ao eixo Y, ou partes superior e inferior, e os 5 pixels se referem aos lados esquerdo e direito. A segunda forma é dando valores para cada lado do box. <br> Então começamos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior com 5 pixels e por último o lado esquerdo com 0, e sempre nessa ordem. Uma boa dica também é que quando o valor for 0 não precisamos não precisamos colocar a unidade. A terceira forma é com as propriedades específicas para cada lado, até agora tínhamos visto atalhos para essas propriedades. Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.</p>
+
+        <h6>background</h6>
+
+        <p>A propriedade background também é um atalho para várias propriedades, mas isso vocês podem absorver aos poucos, e uma boa opção de leitura é a documentação do MDN. Por enquanto veremos apenas como mudar a cor de fundo. E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras. A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho background.</p>
+
+        <h6>Border</h6>
+
+        <p>Vimos que a propriedade border pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso. A largura pode ser usada com várias unidades, como px, em e mm. A cor pode ser atribuída pelo nome ou por um código hexadecimal, assim como fizemos com o background, e o estilo é representada por palavras-chave, vamos ver algumas delas: <br> solid: mostra uma borda simples e reta; <br> dotted: são bolinhas com um pequeno espaçamento entre elas; <br> dashed: forma uma linha tracejada. <br> E aproveitando que mostrei esse código temos que falar sobre como separar a estilização dos lados de uma borda. E se você não quiser usar a propriedade border existem as propriedade específicas para cada aspecto de uma borda, são elas border-width para a largura, border-color para a cor e border-style para o estilo. <br> Aqui temos o mesmo código anterior de duas formas diferentes, a primeira com o atalho border e a segunda com cada propriedade específica. E depois disso podemos juntar os lados com os aspectos de uma borda e criar uma regra mais específica ainda. <br> Border-radius <br> E a última propriedade é o border-radius, ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mas as mais comuns são os pixels e a porcentagem. Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no padding e margin - topo, direita, inferior e esquerda -  conseguimos alterar cada canto separadamente.</p>
+
+        <h4>Estilizar textos</h4>
+
+        <h6>font family</h6>
+
+        <p>Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater às fontes seguras, chamadas de web safe fonts. Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupação.</p>
+        
+        <h6>font size</h6>
+
+        <p>O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele mas por enquanto os pixels são suficientes para nós.</p>
+
+        <h6>font style</h6>
+
+        <p>Usamos o font style para tornar um texto itálico, na maioria das vezes você usará apenas o valor italic para ele, mas se precisar tirar o itálico de um texto você pode usar o valor normal.</p>
+
+        <div class="titulo-tela2">
+            <h1> Módulo 6 - Construindo páginas para internet com Bootstrap. [PRÁTICO] </h1>
+        </div>
+
+        <h3>O que é o bootstrap?</h3>
+
+        <p> É um framework muito utilizado em sites responsivos, que possui uma vasta biblioteca de componentes que facilita e agiliza desenvolvimento WEB. É um dos mais conhecidos e um dos mais usados em desenvolvimento bootstrap.</p>
+
+        <div class="titulo-tela2">
+            <h1> Módulo 7 - IDEs instalando e configurando. [PRÁTICO] </h1>
+        </div>
+
+        <h3>O que são IDEs?</h3>
+
+        <p>Um ambiente de desenvolvimento integrado (IDE) é um software para criar aplicações que combina ferramentas comuns de desenvolvimento em uma única interface gráfica do usuário (GUI). <br> Sua principal função é ajudar o programador editar o código que será usado para criar seu programa. Outra coisa muito importante que todos IDEs fazem é chamar o compilador, ou interpretador, dentro de certos parâmetros para gerar e/ou executar o programa criado se ele não contiver erros.</p>
+
+        <h3>O que é o VisualStudioCode</h3>
+
+        <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. <br> </p>
+
+        <div class="titulo-tela2">
+            <h1> Módulo 8 -  </h1>
+        </div>
+
+        <h2></h2>
+
     </section>
 
     <section id="footer" style="background-color: green; color: white;">
