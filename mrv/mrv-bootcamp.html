@@ -7,6 +7,7 @@
     <meta name="author" content="Your name">
     <title> DigitalInovationOne | MRV-Bootcamp-FullStack </title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="icon" href="../imagens/logo.png">
 </head>
 <body>
@@ -387,9 +388,55 @@
 
         <h2>JavaScript em uma página WEB.</h2>
 
+        <h4>Estrutura do projeto.</h4>
+
+        <p>Para um projeto pequeno, temos a pasta raíz que contém o HTML básico da página e uma sub-pasta chamada assets (que irá conter ferramentas usadas para aprimorar o html), geralmente, criam-se sub-pastas dessa sub-pasta com a ferramenta: raíz/js/script.js (documento contendo o JavaScript) e raíz/css/style.css (documento contendo CSS).</p>
+
+        <h4>Integrando JavaScipt e HTML.</h4>
+
+        <p>Para importar CSS é preciso usar a tag link com atributos: rel (qual relacionamento será feito, no caso, stylesheet) e href (onde está o nosso css, no caso, ./css/style.css ). <br> Para importar o JavaScipt usa-se a tag script e depois o atributo src (onde está o JavaScipt, no caso, ./js/script.js) </p>
+
+        <h4>Explorando o DOM.</h4>
+
+        <p>DOM = Document Object Moment, é tudo aquilo que existe e a estrutura dos elementos da janela, refere-se a arvore de elementos que tem dentro da janela que estamos.</p>
+
+        <h4>Fazer alterações na página HTML por meio do JavaScript.</h4>
+
+        <p>Podemos alterar o CSS de uma página HTML usando JavaScript, para tanto devemos em um primeiro momento encontrar o elemento que pode ser por: <ul> <li> document.getElementById (encontrar pela id); </li> <li> document.getElementsByClassName (encontrar pela classe) </li> <li> document.getElementsByTagName (encontrar pelo nome da tag) </li> </ul> <br> Em seguida, colocar isso dentro de uma variável ex: var x = document.getElementsByIdName("tela2")[0] e, por fim, usar o variavel com uso style, ex: x.style.color = red </p>
+
         <h2>Colocando em prática.</h2>
 
+        <p> Vamos criar um contador do 0. <a href="./contador/contador.html"> VEJA O QUE EU CRIEI. </a> <br> Vamos criar um to-do-list do 0. <a href="./to-do-list/to-do-list.html"> VEJA O QUE EU CRIEI.</a> </p>
+
         <h2>Mercado de trabalho.</h2>
+
+        <h4>Frameworks e bibliotecas:</h4>
+
+        <p> Você vai ouvir muito: VueJS; Angular; React; jQuery. É necessário conhecer o JavaScript puro (Vanilla JavaScript) antes de ir pra essas bibliotecas. <br> São ferramentas que foram desenvolvidas para acelerar o desenvolvimento, são funções otimizadas e pré-prontas que facilitaram muito a vida. </p>
+
+        <h4>Sites que salvam vida de programador:</h4>
+
+        <p>mozila web docs; DIO; stackoverflow; YouTube; GitHub; Twitter; Linkedln.</p>
+
+        <div class="titulo-tela2">
+            <h1> Módulo 9 - Sintaxe básica do JavaScript. </h1>
+        </div>
+
+        <h3> O que é JavaScript? </h3>
+
+        <p>O JavaScript é uma linguagem de programação de alto nível, que integra o desenvolvimento de apps e páginas web. É uma das linguagens de programação mais usadas no mundo do desenvolvimento.</p>
+
+        <h3>Origem do JavaScript</h3>
+
+        <p>Em 1995 o programador Brendan Eich que trabalhava na Netscape, implementou uma linguagem de programação chamada Mocha, depois o nome mudou para LiveScript, mas na época a linguagem Java era popular, então mudaram LiveScript para JavaScript como jogada de marketing. A confusão entre JavaScript e Java é culpa dos marketeiros.</p>
+
+        <h3>Para que serve o JavaScript?</h3>
+
+        <p>Para criar scripts dinâmicos que realizam a interação de apps ou páginas web. Imagina que o HTML é a estrutura, o CSS é o design, o JavaScript é a parte interativa do desenvolvimento.</p>
+
+        <h3>Onde usar?</h3>
+
+        <p>Podemos usar o JavaScript de várias formas, seu uso mais comum se dá no desenvolvimento de apps e páginas web, juntamente com as linguagens HTML e CSS. Nesse curso usaremos para estudar e criar projetos.</p>
     </section>
 
     <section id="footer" style="background-color: green; color: white;">
@@ -408,5 +455,6 @@
     <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="./introducao.js"></script>
 </body>
 </html>
